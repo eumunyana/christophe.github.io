@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a neutral color scheme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    max-width: 100%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section Styles */
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: rotateX(20deg); /* Apply a 3D rotation */
+    animation: bounce 2s infinite; /* Add a bounce animation */
+}
+
+.profile-img {
+    width: 100%; /* Ensure the profile image takes the full width of its parent */
+    height: 100%; /* Ensure the profile image takes the full height of its parent */
+}
+
+.profile-description {
+    flex: 1; /* Allow the description to take up remaining space */
+    padding: 0 20px; /* Add some spacing between the picture and description */
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* No vertical movement */
+    }
+    40% {
+        transform: translateY(-10px); /* Bounce up 10px */
+    }
+    60% {
+        transform: translateY(-5px); /* Bounce up 5px */
+    }
+}
+
+/* Portfolio Title Section Styles */
+#portfolio-title {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#portfolio-title h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.portfolio-title-bold {
+    font-weight: bold;
+}
+
+/* Gallery Section Styles */
+#portfolio .portfolio-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    flex-basis: calc(33.33% - 10px); /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    margin: 10px 0;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    footer h2 {
+        font-size: 18px;
+    }
+}
+
