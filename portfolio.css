@@ -27,6 +27,11 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#about {
+    max-width: 2000px; /* Set a maximum width of 2000 pixels */
+    max-height: 2000px; /* Set a maximum height of 500 pixels */
+}
+
 /* Profile Section Styles */
 .profile-section {
     display: flex;
