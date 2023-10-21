@@ -27,16 +27,12 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#about {
-    max-width: 2000px; /* Set a maximum width of 2000 pixels */
-    max-height: 2000px; /* Set a maximum height of 500 pixels */
-}
-
 /* Profile Section Styles */
 .profile-section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow: auto;
 }
 
 .profile-picture {
@@ -49,7 +45,7 @@ section {
 
 .profile-img {
     width: 100%; /* Ensure the profile image takes the full width of its parent */
-    height: 100%; /* Ensure the profile image takes the full height of its parent */
+    height: 150%; /* Ensure the profile image takes the full height of its parent */
 }
 
 .profile-description {
@@ -153,5 +149,16 @@ footer {
     footer h2 {
         font-size: 18px;
     }
+    .portfolio-item {
+        flex-basis: calc(50% - 10px);
+    }
+    .portfolio-item img {
+        max-width: 100%;
+    }
 }
 
+/* Prevent images from overflowing their containers */
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
